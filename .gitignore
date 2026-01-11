@@ -1,0 +1,36 @@
+# --- Python Basics ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments (ตัวการที่ทำให้ไฟล์ใหญ่เกิน) ---
+venv/
+env/
+.env
+.venv/
+
+# --- IDE Settings (การตั้งค่าของโปรแกรมเขียนโค้ด ไม่ต้องเอาขึ้น) ---
+.vscode/
+.idea/
+
+# --- Jupyter Notebooks (ถ้าใช้) ---
+.ipynb_checkpoints
+
+# --- Data Files (ไฟล์ข้อมูล ไม่ควรเอาขึ้น GitHub ถ้าไฟล์ใหญ่ หรือเป็นความลับ) ---
+*.csv
+*.xlsx
+*.xls
+*.json
+data/
+
+# --- Machine Learning Models (ไฟล์โมเดลที่เทรนเสร็จแล้ว มักจะใหญ่) ---
+*.pkl
+*.pickle
+*.h5
+*.model
+*.joblib
+
+# --- Logs & OS Files ---
+*.log
+.DS_Store
+Thumbs.db
