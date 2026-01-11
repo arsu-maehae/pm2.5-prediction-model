@@ -47,7 +47,7 @@ plt.xlabel("Time (test index)")
 plt.ylabel("PM2.5")
 plt.legend()
 plt.tight_layout()
-plt.savefig("model/pm25_actual_vs_pred.png")   # บันทึกไฟล์
+plt.savefig(os.path.join(current_dir, "pm25_actual_vs_pred.png"))   # บันทึกไฟล์
 plt.show()
 
 
@@ -65,5 +65,5 @@ print("MAE =", mae)
 print("RMSE =", rmse)
 
 # save model
-joblib.dump(model, "model/pm25_model.pkl")
-print("Saved model -> model/pm25_model.pkl")
+joblib.dump(model, os.path.join(current_dir, "pm25_model.pkl"))
+print(f"Saved model -> {os.path.join(current_dir, 'pm25_model.pkl')}")
